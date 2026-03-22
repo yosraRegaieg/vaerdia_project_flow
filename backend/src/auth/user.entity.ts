@@ -13,4 +13,8 @@ export class User {
 
   @Column()
   password: string;
+
+  @Column({ default: 'membre' })
+  role: string;
+  // 'admin' | 'chef_projet' | 'membre' | 'client'
 }
