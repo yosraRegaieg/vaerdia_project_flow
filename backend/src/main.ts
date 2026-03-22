@@ -1,0 +1,15 @@
+import { NestFactory } from '@nestjs/core';
+import { AppModule } from './app.module';
+
+async function bootstrap() {
+  const app = await NestFactory.create(AppModule);
+
+  // Enable CORS so React frontend can connect
+  app.enableCors();
+
+  const port = process.env.PORT ?? 5173;
+  await app.listen(port);
+
+  console.log(`🚀 Backend is running on http://localhost:${port}`);
+}
+bootstrap();
