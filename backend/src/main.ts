@@ -7,7 +7,7 @@ async function bootstrap() {
   // Enable CORS so React frontend can connect
   app.enableCors();
 
-  const port = process.env.PORT ?? 5173;
+  const port = process.env.PORT ?? 3000;
   await app.listen(port);
 
   console.log(`🚀 Backend is running on http://localhost:${port}`);

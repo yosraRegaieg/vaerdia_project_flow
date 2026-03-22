@@ -1,12 +1,7 @@
-import Register from "./pages/Register";
-import Login from "./pages/Login";
-
 function App() {
   return (
-    <div>
-      <h1>My App</h1>
-      <Register />
-      <Login />
+    <div className="bg-purple-500 text-white p-10 text-3xl">
+      Tailwind is working 🚀
     </div>
   );
 }
